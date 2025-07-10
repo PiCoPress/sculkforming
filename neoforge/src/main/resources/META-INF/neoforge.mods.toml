@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "sculkforming"
+version = "${version}"
+displayName = "SculkForming"
+authors = "PICOPress"
+description = '''
+Sculk catalyst can make other sculk catalysts
+'''
+logoFile = "assets/sculkforming/icon.png"
+
+[[dependencies.sculkforming]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sculkforming]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sculkforming]]
+modId = "architectury"
+type = "required"
+versionRange = "[13,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "sculkforming.mixins.json"
